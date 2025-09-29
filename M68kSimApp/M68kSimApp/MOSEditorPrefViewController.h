@@ -7,11 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <FragariaDefaultsCoordinator/FragariaDefaultsCoordinator.h>
+#import <MGSFragaria/MGSFragariaPreferences.h>
 #import "MOSColourSchemeListController.h"
 
 
-@interface MOSColourSchemeTableViewDataSource: MGSColourSchemeTableViewDataSource
+@interface MOSColourSchemeTableViewDataSource: NSObject <NSTableViewDataSource>
+
+@property (nonatomic) BOOL showGroupProperties;
+@property (nonatomic) BOOL showGroupGlobalProperties;
+@property (nonatomic) BOOL showHeaders;
+@property (nonatomic, strong, nullable) MGSColourScheme *currentScheme;
 
 @end
 
@@ -20,8 +25,8 @@
   NSFont *editorFont;
 }
 
-@property (nonatomic) IBOutlet NSUserDefaultsController *userDefaultsController;
-@property (nonatomic) IBOutlet NSObjectController *colorSchemeController;
-@property (nonatomic) IBOutlet MOSColourSchemeTableViewDataSource *colourSchemeTableViewDs;
+@property (nonatomic) IBOutlet NSUserDefaultsController * _Nullable userDefaultsController;
+@property (nonatomic) IBOutlet NSObjectController * _Nullable colorSchemeController;
+@property (nonatomic) IBOutlet MOSColourSchemeTableViewDataSource * _Nullable colourSchemeTableViewDs;
 
 @end

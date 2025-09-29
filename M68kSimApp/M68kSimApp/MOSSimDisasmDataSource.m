@@ -10,8 +10,8 @@
 #import "MOSSimulatorPresentation.h"
 #import "MOSSimulator.h"
 #import "MOSListingDictionary.h"
-#import "Fragaria/NSTextStorage+Fragaria.h"
-#import "Fragaria/MGSMutableSubstring.h"
+#import "NSTextStorage+Fragaria.h"
+#import "MGSMutableSubstring.h"
 
 
 @implementation MOSSimDisasmDataSource

@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <Fragaria/Fragaria.h>
+#import <MGSFragaria/MGSFragaria.h>
 #import "MOSColourSchemeListController.h"
 
 

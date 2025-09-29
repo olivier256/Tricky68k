@@ -7,27 +7,24 @@
 //
 
 #import "MOSColourSchemeListController.h"
-
+#import "MGSColourSchemeOption.h"
 
 @implementation MOSColourSchemeListController
 
-
 - (void)awakeFromNib
 {
-  if (!self.defaultScheme)
-    self.defaultScheme = super.defaultScheme;
-  [super awakeFromNib];
+  if (!self.defaultScheme) {
+    self.defaultScheme = [[MGSColourScheme alloc] init];
+  }
 }
 
-
 @synthesize defaultScheme;
-
+@synthesize disableCustomSchemes;
 
 - (NSArray <MGSColourSchemeOption *> *)loadColourSchemes
 {
-  /* only show application-specific schemes */
-  return [self loadApplicationColourSchemes];
+  // Pour l’instant, retournez une liste vide ou vos schémas maison
+  return @[];
 }
-
 
 @end

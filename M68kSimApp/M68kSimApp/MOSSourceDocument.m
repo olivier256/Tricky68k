@@ -7,7 +7,8 @@
 //
 
 #import "MOSSourceDocument.h"
-#import <Fragaria/Fragaria.h>
+#import <MGSFragaria/SMLSyntaxError.h>
+#import <MGSFragaria/MGSFragaria.h>
 #import "PlatformSupport.h"
 #import "MOSFragariaPreferencesObserver.h"
 #import "MOSJobStatusManager.h"
@@ -20,14 +21,16 @@
 #import "MOSPrintAccessoryViewController.h"
 #import "MOSPlatformManager.h"
 #import "MOSSimulatorTouchBarDelegate.h"
-
+#import "MGSFragariaView.h"
+#import "MGSTextView.h"
+#import "MGSTextView+Compat.h"
 
 static void *AssemblageEvent = &AssemblageEvent;
 
 
 NSArray *MOSSyntaxErrorsFromEvents(NSArray *events) {
   NSDictionary *event;
-  MGSSyntaxError *serror;
+  SMLSyntaxError *serror;
   NSMutableArray *serrors;
   
   serrors = [NSMutableArray array];
@@ -35,14 +38,14 @@ NSArray *MOSSyntaxErrorsFromEvents(NSArray *events) {
     if ([[event objectForKey:MOSJobEventType] isEqual:MOSJobEventTypeMessage]) continue;
     if (![event objectForKey:MOSJobEventAssociatedLine]) continue;
     
-    serror = [[MGSSyntaxError alloc] init];
-    [serror setErrorDescription:[event objectForKey:MOSJobEventText]];
+    serror = [[SMLSyntaxError alloc] init];
+      serror.description = [event objectForKey:MOSJobEventText];
     [serror setLine:[[event objectForKey:MOSJobEventAssociatedLine] intValue]];
     
     if ([[event objectForKey:MOSJobEventType] isEqual:MOSJobEventTypeError])
-      [serror setWarningLevel:kMGSErrorCategoryError];
+        serror.code = @"error";
     else
-      [serror setWarningLevel:kMGSErrorCategoryWarning];
+        serror.code = @"warning";
     
     [serrors addObject:serror];
   }

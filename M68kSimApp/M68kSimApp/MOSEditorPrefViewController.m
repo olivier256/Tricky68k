@@ -8,8 +8,10 @@
 
 #import "MOSEditorPrefViewController.h"
 #import "NSUserDefaults+Archiver.h"
-#import <Fragaria/Fragaria.h>
+#import <MGSFragaria/MGSFragaria.h>
 #import "MOSFragariaPreferencesObserver.h"
+#import "MGSPlistColourSchemeTransformer.h"
+#import "MGSColourSchemeTableCellView.h"
 
 
 static void *AppearanceChangedContext = &AppearanceChangedContext;
@@ -105,7 +107,7 @@ static void *AppearanceChangedContext = &AppearanceChangedContext;
 
 - (void)updateView:(MGSColourSchemeTableCellView *)theView
 {
-  [super updateView:theView];
+  // [super updateView:theView];
   if (![theView.globalPropertyKeyPath isEqual:NSStringFromSelector(@selector(currentLineHighlightColour))])
     return;
   theView.enabled.hidden = NO;
@@ -116,7 +118,7 @@ static void *AppearanceChangedContext = &AppearanceChangedContext;
 
 - (void)prepareForReuseView:(MGSColourSchemeTableCellView *)theView
 {
-  [super prepareForReuseView:theView];
+  // [super prepareForReuseView:theView];
   if (![theView.globalPropertyKeyPath isEqual:NSStringFromSelector(@selector(currentLineHighlightColour))])
     return;
   [theView.enabled unbind:NSValueBinding];

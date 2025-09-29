@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <Fragaria/Fragaria.h>
+#import <MGSFragaria/MGSFragaria.h>
 
 
 extern NSString * const MOSPrintFont;
@@ -17,6 +17,5 @@ extern NSString * const MOSPrintColorScheme;
 @interface MOSPrintingTextView : NSTextView
 
 @property (nonatomic) NSInteger tabWidth;
-@property (nonatomic) MGSSyntaxParser *highlightingParser;
 
 @end

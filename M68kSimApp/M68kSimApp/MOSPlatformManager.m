@@ -6,7 +6,7 @@
 //  Copyright © 2017 Daniele Cattaneo. All rights reserved.
 //
 
-#import <Fragaria/Fragaria.h>
+#import <MGSFragaria/MGSFragaria.h>
 #import "MOSPlatformManager.h"
 #import "MOSPlatform.h"
 

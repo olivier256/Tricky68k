@@ -67,6 +67,8 @@ extern NSString * const MGSFragariaPrefsLightColourScheme;
 extern NSString * const MGSFragariaPrefsDarkColourScheme;
 
 
+@class MGSFragariaView;
+
 @interface MOSFragariaPreferencesObserver : NSObject {
   NSMutableArray *registeredKeyPaths;
   MGSFragariaView *_fragaria;

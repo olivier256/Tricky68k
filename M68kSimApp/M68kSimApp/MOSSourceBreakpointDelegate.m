@@ -9,6 +9,7 @@
 #import "MOSSourceBreakpointDelegate.h"
 #import "MOSListingDictionary.h"
 #import "MOSSourceDocument.h"
+#import "MGSFragaria+Breakpoints.h"
 
 
 @implementation MOSSourceBreakpointDelegate

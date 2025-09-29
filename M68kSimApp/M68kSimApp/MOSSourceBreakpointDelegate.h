@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Fragaria/Fragaria.h>
+#import <MGSFragaria/MGSFragaria.h>
 
 
 @class MOSListingDictionary;
@@ -17,16 +17,16 @@
 @interface MOSSourceBreakpointDelegate : NSObject <MGSBreakpointDelegate> {
   NSMutableIndexSet *breakpointList;
   NSMutableDictionary *addressToOriginalLines;
-  MGSFragariaView *fragaria;
+  MGSFragaria *fragaria;
   __weak MOSSourceDocument *source;
 }
 
-- (instancetype)initWithFragaria:(MGSFragariaView *)f source:(MOSSourceDocument *)s;
+- (instancetype)initWithFragaria:(MGSFragaria *)f source:(MOSSourceDocument *)s;
 
 - (NSSet *)breakpointAddressesWithListingDictionary:(MOSListingDictionary *)ld;
 - (void)syncBreakpointsWithAddresses:(NSSet *)as listingDictionary:(MOSListingDictionary *)ld;
 
-- (NSSet *)breakpointsForFragaria:(MGSFragariaView *)sender;
-- (void)toggleBreakpointForFragaria:(MGSFragariaView *)sender onLine:(NSUInteger)line;
+- (NSSet *)breakpointsForFragaria:(MGSFragaria *)sender;
+- (void)toggleBreakpointForFragaria:(MGSFragaria *)sender onLine:(NSUInteger)line;
 
 @end

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Daniele Cattaneo. 
 //
 
-#import <Fragaria/Fragaria.h>
+#import <MGSFragaria/MGSFragaria.h>
 #import "MOSPrintingTextView.h"
 
 
@@ -36,11 +36,6 @@ NSString * const MOSPrintColorScheme = @"MOSPrintColorScheme";
   printInfo = [[NSPrintOperation currentOperation] printInfo];
   [self setFont:[printInfo.dictionary objectForKey:MOSPrintFont]];
   
-  if (self.highlightingParser) {
-    MGSColourScheme *scheme = [printInfo.dictionary objectForKey:MOSPrintColorScheme];
-    MGSHighlightAttributedString(self.textStorage, self.highlightingParser, scheme);
-    self.backgroundColor = scheme.backgroundColor;
-  }
   
   pageSize = [printInfo paperSize];
   pageSize.width -= [printInfo rightMargin] + [printInfo leftMargin];

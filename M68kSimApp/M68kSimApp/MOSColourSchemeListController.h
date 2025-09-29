@@ -6,13 +6,18 @@
 //  Copyright © 2019 Daniele Cattaneo. All rights reserved.
 //
 
-#import <FragariaDefaultsCoordinator/FragariaDefaultsCoordinator.h>
+#import "MGSColourScheme.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MOSColourSchemeListController : MGSColourSchemeListController
+@class MGSColourSchemeOption;
+
+@interface MOSColourSchemeListController : NSObject
 
 @property (nonatomic, strong) MGSColourScheme *defaultScheme;
+@property (nonatomic, assign) BOOL disableCustomSchemes;
+
+- (NSArray <MGSColourSchemeOption *> *)loadColourSchemes;
 
 @end
 

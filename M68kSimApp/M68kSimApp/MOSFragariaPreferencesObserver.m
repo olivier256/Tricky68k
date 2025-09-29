@@ -7,7 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <Fragaria/Fragaria.h>
+// Remplacez l’ancien import Fragaria par ces imports précis :
+#import <MGSFragaria/MGSFragaria.h>
+#import <MGSFragaria/MGSFragariaPreferences.h>
+#import <MGSFragaria/MGSFragariaPrefsViewController.h>
+#import <MGSFragaria/MGSFragariaTextEditingPrefsViewController.h>
+#import <MGSFragaria/MGSFragariaFontsAndColoursPrefsViewController.h>
+#import <MGSFragaria/MGSSyntaxController.h>
+
+// Si vous utilisez notre stub local de schéma de couleurs :
+#import "MGSColourScheme.h"
+
 #import "MOSFragariaPreferencesObserver.h"
 
 
@@ -100,6 +110,8 @@ static char kc_ContextStart[19];
 #define kcAutoCompletePrefsChanged (kc_ContextStart[18])
 #define kc_ContextEnd (kc_ContextStart[19])
 
+
+@class MGSFragariaView;
 
 @implementation MOSFragariaPreferencesObserver
 

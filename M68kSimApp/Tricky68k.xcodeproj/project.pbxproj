@@ -97,13 +97,7 @@
 		01D231941F30B6DE00182DD2 /* MOSFileBackedExecutable.h in Headers */ = {isa = PBXBuildFile; fileRef = 01D231921F30B6DE00182DD2 /* MOSFileBackedExecutable.h */; };
 		01D231951F30B6DE00182DD2 /* MOSFileBackedExecutable.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D231931F30B6DE00182DD2 /* MOSFileBackedExecutable.m */; };
 		01D74EB61F7A583E00BD52A0 /* Motorola68k.mosplatform in Install Platform Plugins */ = {isa = PBXBuildFile; fileRef = 01D74EB41F7A581300BD52A0 /* Motorola68k.mosplatform */; };
-		01D9741F22CC2D24003C41FA /* FragariaDefaultsCoordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D074C2273B0AC0017A4AA /* FragariaDefaultsCoordinator.framework */; };
-		01D9742022CC2D24003C41FA /* FragariaDefaultsCoordinator.framework in Install Frameworks */ = {isa = PBXBuildFile; fileRef = 013D074C2273B0AC0017A4AA /* FragariaDefaultsCoordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		01DE189F1E96BCA600AC5EF4 /* MOSSimulatorTouchBarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DE189E1E96BCA600AC5EF4 /* MOSSimulatorTouchBarDelegate.m */; };
-		01E234C11F7ABF7D00BDD6AE /* Fragaria.framework in Install Frameworks */ = {isa = PBXBuildFile; fileRef = 0148C27A1F7ABE46006AB682 /* Fragaria.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		01E234CD1F7ABF8200BDD6AE /* Sparkle.framework in Install Frameworks */ = {isa = PBXBuildFile; fileRef = 0148C28B1F7ABE56006AB682 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		01E234CF1F7ABFF500BDD6AE /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0148C28B1F7ABE56006AB682 /* Sparkle.framework */; };
-		01E234D01F7ABFFB00BDD6AE /* Fragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0148C27A1F7ABE46006AB682 /* Fragaria.framework */; };
 		01E6A2781C946640002FA51A /* MOSPrintAccessoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E6A2761C946640002FA51A /* MOSPrintAccessoryViewController.m */; };
 		01E93C6F1A6D48E9004BE3C4 /* MOSSimulatorPrefView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E93C711A6D48E9004BE3C4 /* MOSSimulatorPrefView.xib */; };
 		01E93C721A6D48F3004BE3C4 /* MOSPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E93C741A6D48F3004BE3C4 /* MOSPreferencesWindow.xib */; };
@@ -115,6 +109,16 @@
 		01EBAA231AB973DF0076AD02 /* MOSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EBAA221AB973DF0076AD02 /* MOSDocument.m */; };
 		01EBAA261AB9D9140076AD02 /* MOSDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EBAA251AB9D9140076AD02 /* MOSDocumentController.m */; };
 		01F236F01AE5470E0039EB73 /* MOSFragariaPreferencesObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F236EE1AE5470E0039EB73 /* MOSFragariaPreferencesObserver.m */; };
+		09EB19B22E853B0500703E99 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EB19B02E853B0500703E99 /* Sparkle.framework */; };
+		09EB19B32E853B0500703E99 /* Sparkle.framework in Install Frameworks */ = {isa = PBXBuildFile; fileRef = 09EB19B02E853B0500703E99 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09EB19B42E853B0500703E99 /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EB19B12E853B0500703E99 /* MGSFragaria.framework */; };
+		09EB19B52E853B0500703E99 /* MGSFragaria.framework in Install Frameworks */ = {isa = PBXBuildFile; fileRef = 09EB19B12E853B0500703E99 /* MGSFragaria.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09EB19BB2E85771A00703E99 /* MGSPlistColourSchemeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EB19BA2E85771A00703E99 /* MGSPlistColourSchemeTransformer.m */; };
+		09EB19BE2E85792300703E99 /* MGSColourSchemeTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EB19BD2E85792300703E99 /* MGSColourSchemeTableCellView.m */; };
+		09EB19C12E857C1400703E99 /* MGSFragaria+Breakpoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EB19C02E857C1300703E99 /* MGSFragaria+Breakpoints.m */; };
+		09EB19C42E857F8600703E99 /* MGSFragariaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EB19C32E857F8600703E99 /* MGSFragariaView.m */; };
+		09EB19C72E85806400703E99 /* NSTextView+DetabShim.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EB19C62E85806000703E99 /* NSTextView+DetabShim.m */; };
+		09EB19CB2E85829600703E99 /* MGSTextView+Compat.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EB19CA2E85829500703E99 /* MGSTextView+Compat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -272,13 +276,6 @@
 			remoteGlobalIDString = 014F9C991E1AC70900E74EBB;
 			remoteInfo = MOSPlatformSupport;
 		};
-		01D9742122CC2D24003C41FA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0148C22C1F7ABDBF006AB682 /* Fragaria.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 01919E22217D20A800E26B9D;
-			remoteInfo = FragariaDefaultsCoordinator;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -299,10 +296,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				01E234CD1F7ABF8200BDD6AE /* Sparkle.framework in Install Frameworks */,
-				01E234C11F7ABF7D00BDD6AE /* Fragaria.framework in Install Frameworks */,
-				01D9742022CC2D24003C41FA /* FragariaDefaultsCoordinator.framework in Install Frameworks */,
 				014F9CA21E1AC70900E74EBB /* PlatformSupport.framework in Install Frameworks */,
+				09EB19B52E853B0500703E99 /* MGSFragaria.framework in Install Frameworks */,
+				09EB19B32E853B0500703E99 /* Sparkle.framework in Install Frameworks */,
 			);
 			name = "Install Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +472,21 @@
 		01EBAA251AB9D9140076AD02 /* MOSDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOSDocumentController.m; sourceTree = "<group>"; };
 		01F236ED1AE5470E0039EB73 /* MOSFragariaPreferencesObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOSFragariaPreferencesObserver.h; sourceTree = "<group>"; };
 		01F236EE1AE5470E0039EB73 /* MOSFragariaPreferencesObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOSFragariaPreferencesObserver.m; sourceTree = "<group>"; };
+		09EB19B02E853B0500703E99 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = ../Frameworks/Sparkle.framework; sourceTree = "<group>"; };
+		09EB19B12E853B0500703E99 /* MGSFragaria.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGSFragaria.framework; path = ../Frameworks/MGSFragaria.framework; sourceTree = "<group>"; };
+		09EB19B92E85771A00703E99 /* MGSPlistColourSchemeTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGSPlistColourSchemeTransformer.h; sourceTree = "<group>"; };
+		09EB19BA2E85771A00703E99 /* MGSPlistColourSchemeTransformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGSPlistColourSchemeTransformer.m; sourceTree = "<group>"; };
+		09EB19BC2E85792300703E99 /* MGSColourSchemeTableCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGSColourSchemeTableCellView.h; sourceTree = "<group>"; };
+		09EB19BD2E85792300703E99 /* MGSColourSchemeTableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGSColourSchemeTableCellView.m; sourceTree = "<group>"; };
+		09EB19BF2E857C1300703E99 /* MGSFragaria+Breakpoints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGSFragaria+Breakpoints.h"; sourceTree = "<group>"; };
+		09EB19C02E857C1300703E99 /* MGSFragaria+Breakpoints.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MGSFragaria+Breakpoints.m"; sourceTree = "<group>"; };
+		09EB19C22E857F8600703E99 /* MGSFragariaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGSFragariaView.h; sourceTree = "<group>"; };
+		09EB19C32E857F8600703E99 /* MGSFragariaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGSFragariaView.m; sourceTree = "<group>"; };
+		09EB19C52E85804C00703E99 /* NSTextView+DetabShim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTextView+DetabShim.h"; sourceTree = "<group>"; };
+		09EB19C62E85806000703E99 /* NSTextView+DetabShim.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTextView+DetabShim.m"; sourceTree = "<group>"; };
+		09EB19C82E85813C00703E99 /* MGSTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGSTextView.h; sourceTree = "<group>"; };
+		09EB19C92E85827F00703E99 /* MGSTextView+Compat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGSTextView+Compat.h"; sourceTree = "<group>"; };
+		09EB19CA2E85829500703E99 /* MGSTextView+Compat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MGSTextView+Compat.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -491,9 +502,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				014F9CA11E1AC70900E74EBB /* PlatformSupport.framework in Frameworks */,
-				01E234CF1F7ABFF500BDD6AE /* Sparkle.framework in Frameworks */,
-				01D9741F22CC2D24003C41FA /* FragariaDefaultsCoordinator.framework in Frameworks */,
-				01E234D01F7ABFFB00BDD6AE /* Fragaria.framework in Frameworks */,
+				09EB19B42E853B0500703E99 /* MGSFragaria.framework in Frameworks */,
+				09EB19B22E853B0500703E99 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,6 +701,19 @@
 		016CD1371A51A10E00D64892 /* M68kSimApp */ = {
 			isa = PBXGroup;
 			children = (
+				09EB19CA2E85829500703E99 /* MGSTextView+Compat.m */,
+				09EB19C92E85827F00703E99 /* MGSTextView+Compat.h */,
+				09EB19C82E85813C00703E99 /* MGSTextView.h */,
+				09EB19C62E85806000703E99 /* NSTextView+DetabShim.m */,
+				09EB19C52E85804C00703E99 /* NSTextView+DetabShim.h */,
+				09EB19C22E857F8600703E99 /* MGSFragariaView.h */,
+				09EB19C32E857F8600703E99 /* MGSFragariaView.m */,
+				09EB19BF2E857C1300703E99 /* MGSFragaria+Breakpoints.h */,
+				09EB19C02E857C1300703E99 /* MGSFragaria+Breakpoints.m */,
+				09EB19BC2E85792300703E99 /* MGSColourSchemeTableCellView.h */,
+				09EB19BD2E85792300703E99 /* MGSColourSchemeTableCellView.m */,
+				09EB19B92E85771A00703E99 /* MGSPlistColourSchemeTransformer.h */,
+				09EB19BA2E85771A00703E99 /* MGSPlistColourSchemeTransformer.m */,
 				016CD13A1A51A10E00D64892 /* MOSAppDelegate.h */,
 				016CD13B1A51A10E00D64892 /* MOSAppDelegate.m */,
 				016CD1471A51A10F00D64892 /* MainMenu.xib */,
@@ -855,6 +878,8 @@
 		01E234CE1F7ABFF500BDD6AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09EB19B12E853B0500703E99 /* MGSFragaria.framework */,
+				09EB19B02E853B0500703E99 /* Sparkle.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -933,7 +958,6 @@
 			);
 			dependencies = (
 				014F9CA01E1AC70900E74EBB /* PBXTargetDependency */,
-				01D9742222CC2D24003C41FA /* PBXTargetDependency */,
 			);
 			name = Tricky68k;
 			productName = M68kSimApp;
@@ -1232,6 +1256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				016F94F11A8559D200770684 /* MOSPrintingTextView.m in Sources */,
+				09EB19C12E857C1400703E99 /* MGSFragaria+Breakpoints.m in Sources */,
 				014A3C701A5D439500F73FC5 /* MOSTeletypeViewDelegate.m in Sources */,
 				01843FF91AC9A0AE00FF3BC7 /* MOSColoredView.m in Sources */,
 				017D700D1A72FA9D003DCAF3 /* MOSAssemblerPrefViewController.m in Sources */,
@@ -1244,10 +1269,12 @@
 				014D85D71A62CF2100648B41 /* MOSJobWindowController.m in Sources */,
 				01EBAA261AB9D9140076AD02 /* MOSDocumentController.m in Sources */,
 				01F236F01AE5470E0039EB73 /* MOSFragariaPreferencesObserver.m in Sources */,
+				09EB19C72E85806400703E99 /* NSTextView+DetabShim.m in Sources */,
 				0161F7F61A6AFD2600848C0D /* MOSSimulatorPrefViewController.m in Sources */,
 				014F9C7B1E1AA71800E74EBB /* MOSPlatformManager.m in Sources */,
 				0161F7F21A6ADF0200848C0D /* MOSSimulatorSubviewDelegate.m in Sources */,
 				01C20CA41A6726D600057D6B /* MOSPreferencesWindowController.m in Sources */,
+				09EB19BB2E85771A00703E99 /* MGSPlistColourSchemeTransformer.m in Sources */,
 				016CD13E1A51A10E00D64892 /* main.m in Sources */,
 				0196535C1A543A04002B3C39 /* MOSSimDumpDataSource.m in Sources */,
 				014A08321BE69E5E00A8FA0F /* MOSSimulatorToolbarDelegate.m in Sources */,
@@ -1262,14 +1289,17 @@
 				016CD1621A51AC7600D64892 /* MOSExecutableDocument.m in Sources */,
 				0108A2AF1AE6FE4500085E5F /* MOSDescribeFontTransformer.m in Sources */,
 				01A419451A57382900D9BD02 /* MOSSimStackDumpDataSource.m in Sources */,
+				09EB19BE2E85792300703E99 /* MGSColourSchemeTableCellView.m in Sources */,
 				015D18BF1AB6427B00F2A41A /* MOSEditorPrefViewController.m in Sources */,
 				0196535F1A54D353002B3C39 /* MOSSimDisasmDataSource.m in Sources */,
+				09EB19CB2E85829600703E99 /* MGSTextView+Compat.m in Sources */,
 				01A2ABB61BBC86FF008BBC59 /* MOSSimBrkptWindowController.m in Sources */,
 				013D84CA1BC0A594003E4817 /* MOSMutableBreakpoint.m in Sources */,
 				013D84C71BC06DF7003E4817 /* MOSAddressFormatter.m in Sources */,
 				014D85DC1A62D01900648B41 /* MOSJobStatusManager.m in Sources */,
 				01EBAA231AB973DF0076AD02 /* MOSDocument.m in Sources */,
 				014A08381BE6B25E00A8FA0F /* MOSViewValidatingToolbarItem.m in Sources */,
+				09EB19C42E857F8600703E99 /* MGSFragariaView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1280,11 +1310,6 @@
 			isa = PBXTargetDependency;
 			target = 014F9C991E1AC70900E74EBB /* PlatformSupport */;
 			targetProxy = 014F9C9F1E1AC70900E74EBB /* PBXContainerItemProxy */;
-		};
-		01D9742222CC2D24003C41FA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FragariaDefaultsCoordinator;
-			targetProxy = 01D9742122CC2D24003C41FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1413,6 +1438,7 @@
 				INFOPLIST_FILE = MOSPlatformSupport/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielecattaneo.MOSPlatformSupport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1438,6 +1464,7 @@
 				INFOPLIST_FILE = MOSPlatformSupport/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielecattaneo.MOSPlatformSupport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1557,10 +1584,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/M68kSim-cveyivcdmknefqcmyikhklmdldlu/Build/Products/Debug",
+					"$(PROJECT_DIR)/../Frameworks",
 				);
 				INFOPLIST_FILE = M68kSimApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.danielecattaneo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Tricky68k;
@@ -1575,10 +1603,11 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/M68kSim-cveyivcdmknefqcmyikhklmdldlu/Build/Products/Debug",
+					"$(PROJECT_DIR)/../Frameworks",
 				);
 				INFOPLIST_FILE = M68kSimApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.danielecattaneo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Tricky68k;
